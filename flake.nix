@@ -21,19 +21,27 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
+
         modules = [
+          
           ./core/system/configuration.nix
 
+          # Stylix Module
           stylix.nixosModules.stylix
-          
-           home-manager.nixosModules.home-manager
-           {
-             home-manager.useGlobalPkgs = true;
-             home-manager.useUserPackages = true;
-             home-manager.users.${vars.username} = import ./core/system/home.nix;
-            
-           }
+        
+          # Home-Manager Configuration
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users = {
+                ${vars.username} = import ./core/system/home.nix;
+              };
+            };
+          }
         ];
+
       };
     }; 
   };
