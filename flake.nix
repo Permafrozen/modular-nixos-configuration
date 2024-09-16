@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.05";
     stylix.url = "github:danth/stylix";
+    ags.url = "github:Aylur/ags";
 
     home-manager = { 
       url = "github:nix-community/home-manager/release-24.05";
@@ -30,11 +31,13 @@
           stylix.nixosModules.stylix
         
           # Home-Manager Configuration
-          home-manager.nixosModules.home-manager
-          {
+          home-manager.nixosModules.home-manager {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
+
+              extraSpecialArgs = { inherit inputs; };
+
               users = {
                 ${vars.username} = import ./core/system/home.nix;
               };
