@@ -31,6 +31,7 @@
     ../../external/config/application/bottom/bottom.nix
     ../../external/config/application/IDE/idea-ultimate.nix
     ../../external/config/application/music/spotube.nix
+    ../../external/config/application/libreoffice/default.nix
 
   ];
 }
