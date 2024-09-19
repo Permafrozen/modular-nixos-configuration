@@ -49,7 +49,7 @@ in
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "de";
+    layout = "${vars.keyMap}";
     variant = "";
   };
 
@@ -57,7 +57,7 @@ in
   console.keyMap = "de"; #vars.keyMap;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.matteo = {
+  users.users.${vars.username} = {
     isNormalUser = true;
     description = vars.username;
     extraGroups = [ "networkmanager" "wheel" ];
