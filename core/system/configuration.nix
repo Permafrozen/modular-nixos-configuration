@@ -72,6 +72,7 @@ in
     wget
     nurl
     vim
+    tree
   ];
 
   # Font Packages
