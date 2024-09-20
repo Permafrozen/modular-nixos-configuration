@@ -73,6 +73,7 @@ in
     nurl
     vim
     tree
+    staruml
   ];
 
   # Font Packages
