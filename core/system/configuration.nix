@@ -75,6 +75,7 @@ in
     tree
     staruml
     bat
+    vscodium
   ];
 
   # Font Packages
