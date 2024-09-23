@@ -23,6 +23,7 @@ in {
 
       # Monitor Settings
       monitor=eDP-1,${vars.resolution},0x0,1
+      monitor=HDMI-A-1,1920x1080@60,0x0,1
 
       # Programs 
       $terminal = ${vars.terminal}
