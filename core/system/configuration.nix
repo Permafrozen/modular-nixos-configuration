@@ -74,6 +74,7 @@ in
     vim
     tree
     staruml
+    bat
   ];
 
   # Font Packages
