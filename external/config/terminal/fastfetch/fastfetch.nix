@@ -13,7 +13,7 @@ in
     {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "~/.modular-nixos-configuration/external/theme/ascii-icon/nixos.txt",
+        "source": "~/.modular-nixos-configuration/external/theme/ascii-icon/rose.txt",
         "padding": {
             "top": 2,
             "right": 6
