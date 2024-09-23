@@ -21,7 +21,7 @@ in {
 
         c.fonts.default_family = "Hack Nerd Font"
         c.colors.webpage.preferred_color_scheme = "dark"
-        c.window.transparent = True
+        c.window.transparent = False
         c.scrolling.smooth = True
         c.statusbar.show   = "never"
         c.tabs.show        = "never" 
